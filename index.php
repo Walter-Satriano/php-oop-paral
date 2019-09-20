@@ -31,11 +31,30 @@
     }
   };
 
+  $x1 = $_GET["x1"];
+  $y1 = $_GET["y1"];
+  $z1 = $_GET["z1"];
+
+  $x2 = $_GET["x2"];
+  $y2 = $_GET["y2"];
+  $z2 = $_GET["z2"];
+
+  $x3 = $_GET["x3"];
+  $y3 = $_GET["y3"];
+  $z3 = $_GET["z3"];
+
+
   $parallelepipedi = [
-    new Parallelepipedo(14, 70, 30),
-    new Parallelepipedo(10, 10, 10),
-    new Parallelepipedo(27, 8, 40)
+    new Parallelepipedo($x1, $y1, $z1),
+    new Parallelepipedo($x2, $y2, $z2),
+    new Parallelepipedo($x3, $y3, $z3)
   ];
+
+  // $parallelepipedi = [
+  //   new Parallelepipedo(14, 70, 30),
+  //   new Parallelepipedo(10, 10, 10),
+  //   new Parallelepipedo(27, 8, 40)
+  // ];
 
   $sommaArea = 0;
   $sommaVolume = 0;
